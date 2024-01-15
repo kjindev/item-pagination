@@ -3,6 +3,9 @@ src/
 public/
 tsconfig.json
 package-lock.json
-cjs/
-esm/
+dist/
+cjs/package.json
+cjs/tsconfig.json
+esm/package.json
+esm/tsconfig.json
 .vscode/

@@ -1,4 +1,4 @@
-# GET-PAGINATION <img src="https://img.shields.io/badge/version-1.0.5-blue" />
+# ITEM-PAGINATION <img src="https://img.shields.io/badge/version-1.0.1-blue" />
 
 <br />
 
@@ -21,4 +21,4 @@ This open-source was developed using the following development stacks:
 
 ## License
 
-GET-PAGINATION is MIT Licensed.
+ITEM-PAGINATION is MIT Licensed.
