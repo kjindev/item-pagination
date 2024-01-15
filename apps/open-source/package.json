@@ -1,7 +1,25 @@
 {
   "name": "get-pagination",
   "version": "0.0.1",
-  "private": true,
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
+    }
+  },
+  "description": "pagination",
+  "keywords": [
+    "react",
+    "pagination",
+    "javascript",
+    "typescript"
+  ],
+  "author": {
+    "name": "devsth"
+  },
+  "license": "MIT",
   "dependencies": {
     "@types/node": "^16.18.71",
     "@types/react": "^18.2.48",
@@ -11,7 +29,10 @@
     "typescript": "^4.9.5"
   },
   "scripts": {
-    "start": "react-scripts start"
+    "start": "react-scripts start",
+    "build": "mkdir dist && npm run build:cjs & npm run build:esm",
+    "build:cjs": "tsc --p ./cjs/tsconfig.json --outDir ./dist/cjs",
+    "build:esm": "tsc --p ./esm/tsconfig.json --outDir ./dist/esm"
   },
   "eslintConfig": {
     "extends": [
