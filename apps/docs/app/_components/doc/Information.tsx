@@ -1,7 +1,6 @@
 import React from "react";
 import { projectTitle, robotoBold } from "../../../util/constant";
-import Image from "next/image";
-import LinkIcon from "../../assets/open_in_new.svg";
+
 export default function Information() {
   return (
     <div className="pt-6">
