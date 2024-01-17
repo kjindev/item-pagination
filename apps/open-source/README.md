@@ -15,7 +15,6 @@
 This open-source was developed using the following development stacks:
 
 - **Language:** TypeScript
-- **Core:** React
 
 <br />
 
