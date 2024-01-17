@@ -1,22 +1,22 @@
 import React from "react";
 import { projectTitle, robotoBold } from "../../../util/constant";
+import LinkIcon from "../../assets/open_in_new.svg";
+import Image from "next/image";
 
 export default function Information() {
   return (
     <div className="pt-6">
       <div className="py-3">
-        {/* <div className={`${robotoBold.className} text-lg`}>
-          ✅ What does React Moving Scroll support?
+        <div className={`${robotoBold.className} text-lg`}>
+          ✅ What does {projectTitle} support?
         </div>
         <div className="text-sm py-3 leading-7">
-          React Moving Scroll supports{" "}
-          <span className="font-bold">TypeScript</span>. You can use it in{" "}
-          <span className="font-bold">React</span> and{" "}
-          <span className="font-bold">Next.js</span>, and also, it supports{" "}
+          {projectTitle} supports <span className="font-bold">TypeScript</span>.
+          You can use it in
           <span className="font-bold">CommonJS</span> and{" "}
-          <span className="font-bold">ESModule</span>. So, don't hesitate to add
-          React Moving Scroll in your project!
-        </div> */}
+          <span className="font-bold">ESModule</span>. So, don't hesitate to add{" "}
+          {projectTitle} in your project!
+        </div>
       </div>
       <div className="py-3">
         <div className={`${robotoBold.className} text-lg`}>
@@ -24,8 +24,8 @@ export default function Information() {
         </div>
         <div className="text-sm py-3 text-justify leading-7">
           The lastest version is{" "}
-          <span className="bg-zinc-200 rounded px-1">1.0.3</span>, updated on
-          January 11.
+          <span className="bg-zinc-200 rounded px-1">1.0.1</span>, updated on
+          January 17.
         </div>
       </div>
       <div className="py-3">
@@ -37,22 +37,22 @@ export default function Information() {
       <div className="py-3">
         <div className={`${robotoBold.className} text-lg`}>✅ Link</div>
         <div className="text-sm py-3 text-justify leading-7">
-          {/* <a
-            href="https://github.com/kjindev/react-moving-scroll"
+          <a
+            href="https://github.com/kjindev/item-pagination"
             target="_blank"
-            className="hover:text-green-600 flex items-center"
+            className="hover:text-cyan-600 flex items-center"
           >
             <Image src={LinkIcon} alt="icon" />
             <span className="ml-1">Github Link</span>
           </a>
           <a
-            href="https://www.npmjs.com/package/react-moving-scroll"
+            href="https://www.npmjs.com/package/item-pagination"
             target="_blank"
-            className="hover:text-green-600 flex items-center"
+            className="hover:text-cyan-600 flex items-center"
           >
             <Image src={LinkIcon} alt="icon" />
             <span className="ml-1">NPM Package Link</span>
-          </a> */}
+          </a>
         </div>
       </div>
     </div>

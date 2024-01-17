@@ -34,13 +34,13 @@ export default function NavBar() {
           {projectTitle}
         </Link>
         <div className="text-sm">
-          <Link href="/doc/getting-started" className=" hover:text-green-600">
+          <Link href="/doc/getting-started" className=" hover:text-cyan-600">
             Doc
           </Link>
           <a
-            href="https://github.com/kjindev/react-moving-scroll"
+            href="https://github.com/kjindev/item-pagination"
             target="_blank"
-            className="hover:text-green-600 ml-5"
+            className="hover:text-cyan-600 ml-5"
           >
             Github
           </a>
