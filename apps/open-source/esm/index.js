@@ -23,4 +23,8 @@ export var getPagination = function (inputData, itemCnt, currentPage) {
     var tempData = data.map(function (item, i) { return (__assign(__assign({}, item), { page: Math.ceil((i + 1) / itemCnt) })); });
     return tempData.filter(function (item) { return item.page === currentPage; });
 };
-export default getPagination;
+export var getTotalPages = function (inputData, itemCnt) {
+    var lastPage = Math.ceil(inputData.length / itemCnt);
+    var tempPageNumbers = Array.from({ length: lastPage }, function (_, index) { return index + 1; });
+    return tempPageNumbers;
+};

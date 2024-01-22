@@ -20,11 +20,16 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
     return to.concat(ar || Array.prototype.slice.call(from));
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getPagination = void 0;
+exports.getTotalPages = exports.getPagination = void 0;
 var getPagination = function (inputData, itemCnt, currentPage) {
     var data = __spreadArray([], inputData, true);
     var tempData = data.map(function (item, i) { return (__assign(__assign({}, item), { page: Math.ceil((i + 1) / itemCnt) })); });
     return tempData.filter(function (item) { return item.page === currentPage; });
 };
 exports.getPagination = getPagination;
-exports.default = exports.getPagination;
+var getTotalPages = function (inputData, itemCnt) {
+    var lastPage = Math.ceil(inputData.length / itemCnt);
+    var tempPageNumbers = Array.from({ length: lastPage }, function (_, index) { return index + 1; });
+    return tempPageNumbers;
+};
+exports.getTotalPages = getTotalPages;

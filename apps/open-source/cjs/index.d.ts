@@ -1,4 +1,4 @@
 export declare const getPagination: <T extends {}>(inputData: T[], itemCnt: number, currentPage: number) => (T & {
     page: number;
 })[];
-export default getPagination;
+export declare const getTotalPages: <T extends {}>(inputData: T[], itemCnt: number) => number[];

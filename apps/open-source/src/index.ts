@@ -13,4 +13,15 @@ export const getPagination = <T extends {}>(
   return tempData.filter((item) => item.page === currentPage);
 };
 
-export default getPagination;
+export const getTotalPages = <T extends {}>(
+  inputData: T[],
+  itemCnt: number
+): number[] => {
+  const lastPage = Math.ceil(inputData.length / itemCnt);
+  const tempPageNumbers = Array.from(
+    { length: lastPage },
+    (_, index) => index + 1
+  );
+
+  return tempPageNumbers;
+};
