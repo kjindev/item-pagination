@@ -12,12 +12,12 @@ export default function QuickStart() {
         </div>
         <div className="text-sm py-3">
           <CodeBlock />
-          <div className="py-3 leading-7">
-            It is {`getPagination(data, itemsPerPage, currentPage)`}. It creates
-            a new key-value, <span className="font-bold">page: index</span> in
-            the object.
+          <div className="py-3 mt-2">
+            <span className="font-bold">{`getPagination(data, itemsPerPage, currentPage)`}</span>
+            : It creates a new key-value,{" "}
+            <span className="font-bold">page: index</span> in the object.
           </div>
-          <div className="flex w-full justify-between text-center bg-zinc-200 p-2 rounded-xl my-2 text-xs font-bold">
+          <div className="flex w-full justify-between text-center bg-zinc-200 p-2 rounded-xl text-xs font-bold">
             <div className="w-[20%]">name</div>
             <div className="w-[40%]">type</div>
             <div className="w-[40%]">description</div>
@@ -36,6 +36,24 @@ export default function QuickStart() {
             <div className="w-[20%]">currentPage</div>
             <div className="w-[40%]">number</div>
             <div className="w-[40%]">What page are you currently on.</div>
+          </div>
+          <div className="py-3 mt-2">
+            <span className="font-bold">{`getTotalPages(data, itemsPerPage)`}</span>
+          </div>
+          <div className="flex w-full justify-between text-center bg-zinc-200 p-2 rounded-xl  text-xs font-bold">
+            <div className="w-[20%]">name</div>
+            <div className="w-[40%]">type</div>
+            <div className="w-[40%]">description</div>
+          </div>
+          <div className="flex w-full justify-between items-center text-center bg-zinc-100 p-2 rounded-xl my-2 text-xs">
+            <div className="w-[20%]">data</div>
+            <div className="w-[40%]">Object Array</div>
+            <div className="w-[40%]">Data list.</div>
+          </div>
+          <div className="flex w-full justify-between items-center text-center bg-zinc-100 p-2 rounded-xl my-2 text-xs">
+            <div className="w-[20%]">itemsPerPage</div>
+            <div className="w-[40%]">number</div>
+            <div className="w-[40%]">Item count per page.</div>
           </div>
         </div>
       </div>
